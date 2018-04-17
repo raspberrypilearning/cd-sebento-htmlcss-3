@@ -8,9 +8,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ```html
     <article class="card">
-        <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <img src="barn-owl-landing.jpg" class="tinyPicture">
+        <h3>Barn Owl</h3>
+        <p>Habitat: farmland, grassland</p>
     </article>
 ```
 
@@ -45,11 +45,11 @@ Let's turn the whole preview card into a link so people can click to see more in
 + Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
 
 ```html
-    <a href="attractions.html#scFota">  
+    <a href="birds.html#scBarnowl">  
         <article class="card ">
-            <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <img src="barn-owl-landing.jpg" class="tinyPicture">
+            <h3>Barn Owl</h3>
+            <p>Habitat: farmland, grassland</p>
         </article>
     </a>
 ```
@@ -61,11 +61,11 @@ Let's turn the whole preview card into a link so people can click to see more in
 title: Linking to a specific part of a page
 ---
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page. 
+Notice how the value of `href` in my link ends in `#scBarnowl`? This is a neat trick you can use to jump to a particular part of a page. 
 
 + First, type the URL of the page to link to, followed by `#`. 
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scBarnowl"`. The value of the `id` is what you type after the `#` in your link.
 
 --- /collapse ---
 
@@ -89,4 +89,4 @@ Setting the value of any property to `inherit` makes it use the value that the *
 
 --- /collapse ---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Protected Birds page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!

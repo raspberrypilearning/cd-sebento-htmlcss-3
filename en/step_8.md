@@ -1,6 +1,6 @@
 ## Design cool page layouts
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Protected Birds page. 
 
 Here are three different page layouts you'll be applying: 
 
@@ -9,14 +9,14 @@ Here are three different page layouts you'll be applying:
 + Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
-    <main class="attPageLayoutGrid">
-        <article class="attGridArticle">
+    <main class="myPageLayoutGrid">
+        <article class="myGridArticle">
             <!--other stuff here-->
         </article>
-        <aside class="attGridAside1">
+        <aside class="myGridAside1">
             <!--other stuff here-->
         </aside>
-        <aside class="attGridAside2">
+        <aside class="myGridAside2">
             <!--other stuff here-->
         </aside>
     </main>
@@ -29,7 +29,7 @@ In this example, the `header` and `footer` will be left out of the design, but i
 + Set the `display` property to `grid` on the overall container:
 
 ```css
-    .attPageLayoutGrid {
+    .myPageLayoutGrid {
         display: grid;
         grid-column-gap: 0.5em;
         grid-row-gap: 1em;
@@ -41,27 +41,27 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 + Next, you name a `grid-area` for each element: 
 
 ```css
-    .attGridArticle {
-        grid-area: agArticle;
+    .myGridArticle {
+        grid-area: egArticle;
     }
-    .attGridAside1 {
-        grid-area: agAside1;
+    .myGridAside1 {
+        grid-area: egAside1;
     }
-    .attGridAside2 {
-        grid-area: agAside2;
+    .myGridAside2 {
+        grid-area: egAside2;
     }
 ```
 
 Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Put the following code inside the `.myPageLayoutGrid` CSS rules:
 
 ```css
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "agArticle agArticle"
-        "agAside1 agAside2";
+        "egArticle egArticle"
+        "egAside1 egAside2";
 ```
     
 `fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
@@ -87,8 +87,8 @@ Let's put the `aside` elements over on the right and make them half the width of
 ```css
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2";
+        "egArticle egAside1"
+        "egArticle egAside2";
 ```
 
 ![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
@@ -97,9 +97,9 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 ```css
     grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2"
-        "agArticle . ";
+        "egArticle egAside1"
+        "egArticle egAside2"
+        "egArticle . ";
 ```
 
 ![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
@@ -118,11 +118,11 @@ The following code defines a layout for the CSS class above when the screen is b
 
 ```css
     @media all and (min-width: 1000px) {
-        .attPageLayoutGrid {
+        .myPageLayoutGrid {
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
-                "agArticle agArticle"
-                "agAside1 agAside2";
+                "egArticle egArticle"
+                "egAside1 egAside2";
         }
     }  
 ```
@@ -135,12 +135,12 @@ The following code defines a layout for the CSS class above when the screen is b
 
 ```css
     @media all and (min-width: 1600px) {
-        .attPageLayoutGrid {
+        .myPageLayoutGrid {
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
-                "agArticle agAside1"
-                "agArticle agAside2"
-                "agArticle .";
+                "egArticle egAside1"
+                "egArticle egAside2"
+                "egArticle .";
         }
     }  
 ```

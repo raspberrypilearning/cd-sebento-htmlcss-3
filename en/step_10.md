@@ -54,17 +54,17 @@ A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
 
 Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything. 
 
-![Lightbox effect in action](images/lightboxLemur.png)
+![Lightbox effect in action](images/lightboxOwl.png)
 
 To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
 
 + Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
 ```html
-    <a href="#_" class="lightbox" id="boxLemur">
-        <h3>Lemur!!</h3>
-        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+    <a href="#_" class="lightbox" id="boxBarnowl">
+        <h3>Hi there!</h3>
+        <img src="barn-owl-landing.jpg" alt="Picture of a barn owl" />
+        <p>Owly the barn owl dropping in for lunch</p>
     </a>
 ```
 
@@ -92,8 +92,8 @@ Note: Setting the `position` property to `fixed` means the position you set will
 + Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
 ```html
-    <a href="#boxLemur">
-        <img src="monkey-2223271_640.jpg" class="mediumPics">
+    <a href="#boxBarnowl">
+        <img src="barn-owl-landing.jpg" class="mediumPics">
     </a>
 ```
 

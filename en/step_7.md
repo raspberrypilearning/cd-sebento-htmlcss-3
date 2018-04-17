@@ -7,9 +7,9 @@ On this card you'll learn about two more types of **container** element: one tha
 + Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
 
 ```html
-  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
+  <img id="owly" src="barn-owl.jpg" class="topDivider someSpacing mediumPictures" alt="A barn owl" />the dog" />  		
   <p>
-    Tour guide Tito!
+    Owly the barn owl
   </p>
 ```
 
@@ -19,16 +19,16 @@ On this card you'll learn about two more types of **container** element: one tha
 
 ```html
   <figure>
-      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
+      <img id="owly" src="barn-owl.jpg" class="topDivider someSpacing mediumPictures" alt="A barn owl" />the dog" />  		
       <figcaption>
-      Tour guide Tito!
+      Owly the barn owl
       </figcaption>
   </figure>
 ```
    
 The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![Picture of a barn owl with a caption](images/figureAndCaption.png)
 
 --- collapse ---
 ---
@@ -54,24 +54,31 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
 
 ### Side notes
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+The Protected Birds page on my website is a list of birds that are in decline in Ireland. I want to add some notes about common reasons for declining bird numbers, as well as some useful links. That information doesn't really belong in the `article` element with all the birds. This is an example of when you might use the `aside` element.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`. 
++ Go to a page of your website that has an `article` element on it — I'm using `birds.html`. 
 
 + **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
 
 ```html  
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h3>Threats to birds</h3>
+      <p>
+        Some of the main reasons you might observe declining numbers are:
+      </p>
+      <ol>
+        <li>Habitat destruction</li>
+        <li>Pollution</li>
+        <li>Climate change</li>
+      </ol>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
-  </aside>
+      <h3>Useful links</h3>
+      <p>See the complete published <span class="warnOrange">amber</span> and <span class="warnRed">red</span> lists
+      <a href="https://www.birdwatchireland.ie/LinkClick.aspx?fileticket=VcYOTGOjNbA%3d&tabid=178">here</a>.</p>
+    
+      <p>Check out the Wikipedia <a href="https://en.wikipedia.org/wiki/Bird_conservation">article</a>.</p>
+    </aside>
 ```
 
 --- collapse ---
@@ -92,20 +99,24 @@ Did you spot the other element in there, `span`? This is a special tag you can u
 ```css
   .sideNoteStyle {
     border: dotted 1px purple;
-    background-color: #c1ebec;
+    background-color: #cddffe;
     padding: 0.5em;
     margin: 0.5em;
   }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
+  .warnOrange {
+    background-color: #ffa500;
   }
+  .warnRed {
+    color: #FF4500;
+    font-size: larger;
+  }
+
 ```
 
 ![Additional notes with their own styling](images/asidesStyled.png)
 
 On the next card, you're going to learn how to make your website's layout more interesting! 
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Protected Birds page on my website.
 
    
