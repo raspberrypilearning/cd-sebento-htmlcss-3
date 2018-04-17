@@ -65,7 +65,7 @@ You might want to have some of the pictures overlapping. But how do you choose w
 
 ![](images/whiteInFront.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ Now swap the `z-index` values, so that the `6` and the `10` are the other way around. Do you see any difference on your web page?
 
 ![](images/whiteBehind.png)
 
