@@ -8,8 +8,8 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <img id="imgYoungKestrel" class="absPos" src="young-kestrel.jpg" alt="A young kestrel" />
+        <img id="imgYoungKestrelTree" class="absPos" src="baby-kestrel.jpg" alt="A young kestrel on a branch" />
     </div>
 ```
    
@@ -45,10 +45,10 @@ To define the position of an element, there are four properties you can use: `le
 + Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
 
 ```css
-    #imgTeaCat {
-        width: 250px;
+    #imgYoungKestrel {
+        width: 230px;
         top: 100px;
-        left: 60px;
+        left: 20px;
     }
 ```
 
@@ -59,15 +59,15 @@ You might want to have some of the pictures overlapping. But how do you choose w
 
 + Choose two images and give them positions that cause them to overlap.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other. 
++ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 6;` to the other. 
 
 + Take a look at the result on your webpage.
 
-![](images/horse10Cat7.png)
+![](images/whiteInFront.png)
 
 + Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
 
-![](images/horse7Cat10.png)
+![](images/whiteBehind.png)
 
 --- collapse ---
 ---
@@ -96,13 +96,12 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <img id="imgYoungKestrel" class="collagePhoto absPos" src="young-kestrel.jpg" alt="A young kestrel" />
+        <img id="imgYoungKestrelTree" class="collagePhoto absPos" src="baby-kestrel.jpg" alt="A young kestrel on a branch" />
+        <img id="imgKestrelSky" class="collagePhoto absPos" src="kestrel-flying.jpg" alt="A kestrel flying" />
+        <img id="imgHello" class="collagePhoto absPos" src="bird-kestrel.jpg" alt="Closeup of a kestrel's face" />
+        <img id="imgKestrel" class="collagePhoto absPos" src="kestrel-mirror.jpg" alt="A kestrel perched by a mirror" />
+        <p id="photoText" class="absPos"><em>The Kestrel</em></p>
     </div>
 ```
    
@@ -113,48 +112,42 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 Here are the CSS rules that set the positions for each of my pictures in the collage:
 
 ```css
-    #imgHorse {
-        width: 120px;
-        top: 200px;
-        left: 390px;
-        z-index: 10;
-    }
-    #imgSheep {
-        width: 200px;
+    #imgYoungKestrel {
+        width: 230px;
         top: 100px;
         left: 20px;
-        z-index: 8;
+        z-index: 6;
     }
-    #imgCoast {
-        width: 150px;
-        top: 250px;
-        left: 10px;
-        z-index: 5;
-    }
-    #imgTrees {
-        width: 110px;
-        top: 65px;
-        left: 205px;
-        z-index: 9;
-    }
-    #imgTeaCat {
+    #imgYoungKestrelTree {
         width: 250px;
         top: 210px;
         left: 160px;
+        z-index: 10;
+    }
+    #imgKestrelSky {
+        width: 250px;
+        top: 65px;
+        left: 180px;
+        z-index: 8;
+    }
+    #imgHello {
+        width: 150px;
+        top: 10px;
+        left: 340px;
+        z-index: 9;
+    }
+    #imgKestrel {
+        width: 200px;
+        top: 120px;
+        left: 360px;
         z-index: 7;
     }
-    #imgStreet {
-        width: 180px;
-        top: 90px;
-        left: 310px;
-        z-index: 6;
-    }
     #photoText {
-        font-family: "brush script MT";
-        color: lightgreen;
-        font-size: 4em;
-        left: 35px;
-        top: 15px;
+        font-family: "Times New Roman", serif;
+        color: #cc6699;
+        font-size: 22px;
+        left: 185px;
+        top: 190px;
         z-index: 20;
     }
 ```
