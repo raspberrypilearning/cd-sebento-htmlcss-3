@@ -63,4 +63,4 @@ You end up with pretty much the same menu, right? The cool thing about `flex` is
 
 ![Menu with items aligned to the right](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/se-flex](http://dojo.soy/se-flex).

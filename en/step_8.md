@@ -151,4 +151,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 --- /challenge ---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/se-css-grid](http://dojo.soy/se-css-grid){:target="_blank"}
