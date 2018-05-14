@@ -1,9 +1,9 @@
-title: cd-sebento-htmlcss-3
+title: Advanced HTML/CSS
 hero_image: images/banner.png
-description: cd-sebento-htmlcss-3 description
-version: 4
+description: Add nice layouts and cool effects to your website!
+version: 1
 listed: false
-copyedit: false
+copyedit: true
 last_tested: "2018-04-17"
 steps:
   - title: Introduction
