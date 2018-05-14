@@ -54,7 +54,7 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
 
 ### Side notes
 
-The Protected Birds page on my website is a list of birds that are in decline in Ireland. I want to add some notes about common reasons for declining bird numbers, as well as some useful links. That information doesn't really belong in the `article` element with all the birds. This is an example of when you might use the `aside` element.
+The Protected Birds page on my website is a list of bird species that are in decline in Ireland. I want to add some notes about common reasons for declining bird numbers, as well as some useful links. That information doesn't really belong in the `article` element with all the birds. This is an example of when you might use the `aside` element.
 
 + Go to a page of your website that has an `article` element on it — I'm using `birds.html`. 
 
@@ -64,7 +64,7 @@ The Protected Birds page on my website is a list of birds that are in decline in
   <aside class="sideNoteStyle">
       <h3>Threats to birds</h3>
       <p>
-        Some of the main reasons you might observe declining numbers are:
+        Some of the main reasons for declining numbers of birds are:
       </p>
       <ol>
         <li>Habitat destruction</li>
