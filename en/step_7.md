@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `<\figure>`.
++ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
 
 ```html
   <figure>
@@ -58,7 +58,7 @@ The Protected Birds page on my website is a list of bird species that are in dec
 
 + Go to a page of your website that has an `article` element on it — I'm using `birds.html`. 
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html  
   <aside class="sideNoteStyle">
