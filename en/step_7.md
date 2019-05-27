@@ -1,122 +1,154 @@
-## Captions and side notes
+## Design cool page layouts
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page. 
++ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Protected Birds page. 
 
-### Pictures with captions
+Here are three different page layouts you'll be applying: 
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
+![](images/cssGridLayouts.png)
 
-```html
-  <img id="owly" src="barn-owl.jpg" class="topDivider someSpacing mediumPictures" alt="A barn owl" />the dog" />  		
-  <p>
-    Owly the barn owl
-  </p>
-```
-
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
-
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
-  <figure>
-      <img id="owly" src="barn-owl.jpg" class="topDivider someSpacing mediumPictures" alt="A barn owl" />the dog" />  		
-      <figcaption>
-      Owly the barn owl
-      </figcaption>
-  </figure>
+    <main class="myPageLayoutGrid">
+        <article class="myGridArticle">
+            <!--other stuff here-->
+        </article>
+        <aside class="myGridAside1">
+            <!--other stuff here-->
+        </aside>
+        <aside class="myGridAside2">
+            <!--other stuff here-->
+        </aside>
+    </main>
 ```
-   
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
 
-![Picture of a barn owl with a caption](images/figureAndCaption.png)
+The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
---- collapse ---
----
-title: Why is this useful?
----
+In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
-
-Grouping them together logically also helps to maintain good structure in your website code.
-
---- /collapse ---
-
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
++ Set the `display` property to `grid` on the overall container:
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+    .myPageLayoutGrid {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 1em;
+    }
 ```
 
-### Side notes
+What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 
-The Protected Birds page on my website is a list of bird species that are in decline in Ireland. I want to add some notes about common reasons for declining bird numbers, as well as some useful links. That information doesn't really belong in the `article` element with all the birds. This is an example of when you might use the `aside` element.
++ Next, you name a `grid-area` for each element: 
 
-+ Go to a page of your website that has an `article` element on it — I'm using `birds.html`. 
+```css
+    .myGridArticle {
+        grid-area: egArticle;
+    }
+    .myGridAside1 {
+        grid-area: egAside1;
+    }
+    .myGridAside2 {
+        grid-area: egAside2;
+    }
+```
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
+Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
 
-```html  
-  <aside class="sideNoteStyle">
-      <h3>Threats to birds</h3>
-      <p>
-        Some of the main reasons for declining numbers of birds are:
-      </p>
-      <ol>
-        <li>Habitat destruction</li>
-        <li>Pollution</li>
-        <li>Climate change</li>
-      </ol>
-    </aside>
-    <aside class="sideNoteStyle">
-      <h3>Useful links</h3>
-      <p>See the complete published <span class="warnOrange">amber</span> and <span class="warnRed">red</span> lists
-      <a href="https://www.birdwatchireland.ie/LinkClick.aspx?fileticket=VcYOTGOjNbA%3d&tabid=178">here</a>.</p>
++ Put the following code inside the `.myPageLayoutGrid` CSS rules:
+
+```css
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "egArticle egArticle"
+        "egAside1 egAside2";
+```
     
-      <p>Check out the Wikipedia <a href="https://en.wikipedia.org/wiki/Bird_conservation">article</a>.</p>
-    </aside>
-```
+`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+
 
 --- collapse ---
 ---
-title: Why is this useful?
+title: Help! I got errors and warnings!
 ---
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for. 
+If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
-  
+If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+
 --- /collapse ---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
+Let's put the `aside` elements over on the right and make them half the width of the `article`.
+
++ Change the values of `grid-template-columns` and `grid-template-areas` to:
 
 ```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #cddffe;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .warnOrange {
-    background-color: #ffa500;
-  }
-  .warnRed {
-    color: #FF4500;
-    font-size: larger;
-  }
-
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "egArticle egAside1"
+        "egArticle egAside2";
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting! 
++ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Protected Birds page on my website.
+```css
+    grid-template-areas: 
+        "egArticle egAside1"
+        "egArticle egAside2"
+        "egArticle . ";
+```
 
-   
+![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+
+--- challenge ---
+
+## Challenge: make different layouts for different screen sizes
+
++ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
+
+--- hints ---
+
+--- hint ---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+
+```css
+    @media all and (min-width: 1000px) {
+        .myPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "egArticle egArticle"
+                "egAside1 egAside2";
+        }
+    }  
+```
+
+--- /hint ---
+
+--- hint ---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        .myPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "egArticle egAside1"
+                "egArticle egAside2"
+                "egArticle .";
+        }
+    }  
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /challenge ---
+
+With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/se-css-grid](http://dojo.soy/se-css-grid){:target="_blank"}

@@ -12,10 +12,30 @@ Move your mouse cursor around in the window below to try out some of the effects
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### What you will learn
+--- collapse ---
+---
+title: What you will learn
+---
 
 In these Sushi Cards, you will find out how to:
 * Create any website layout you want
 * Make your layout adjust itself automatically to different screen sizes
 * Make a collage of overlapping pictures and text
 * Apply some neat hover and click effects that you might have seen on other websites
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will need
+---
+
+### Hardware
+
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
+
+### Software
+
+This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+
+--- /collapse ---

@@ -1,92 +1,66 @@
-## Clickable cards
+## All in a row
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**. 
+On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row. 
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
-
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
-
-```html
-    <article class="card">
-        <img src="barn-owl-landing.jpg" class="tinyPicture">
-        <h3>Barn Owl</h3>
-        <p>Habitat: farmland, grassland</p>
-    </article>
-```
-
-![Image and text before styles are applied](images/cardUnstyled.png)   
-
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Add the following CSS properties to the `.card` class:
 
 ```css
-    .tinyPicture {
-        height: 60px;
-        border-radius: 10px;
-    }
-    .card {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #F0FFFF;
-        border-radius: 10px;
-        box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+```
+
+You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left. 
+
+![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+
++ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
+
++ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
+
+```html
+    <div class="cardContainer">
+```
+
++ Add the following CSS code in your style sheet:
+
+```css
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         padding: 10px;
-        margin-top: 10px;
-        font-family: "Trebuchet MS", sans-serif;
-    }
-    .card:hover {
-        border-color: #1E90FF;
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+Voilà! Thanks to **Flex**, your cards are now displayed side by side! 
 
-Let's turn the whole preview card into a link so people can click to see more information. 
++ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
+![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
 
-```html
-    <a href="birds.html#scBarnowl">  
-        <article class="card ">
-            <img src="barn-owl-landing.jpg" class="tinyPicture">
-            <h3>Barn Owl</h3>
-            <p>Habitat: farmland, grassland</p>
-        </article>
-    </a>
-```
++ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
 
---- collapse ---
----
-title: Linking to a specific part of a page
----
+If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
 
-Notice how the value of `href` in my link ends in `#scBarnowl`? This is a neat trick you can use to jump to a particular part of a page. 
++ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
 
-+ First, type the URL of the page to link to, followed by `#`. 
-
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scBarnowl"`. The value of the `id` is what you type after the `#` in your link.
-
---- /collapse ---
-
---- collapse ---
----
-title: Resetting styles
----
-
-Now that the whole preview card is a link, the text font may have changed. 
-
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
 
 ```css
-    .cardLink {
-        color: inherit;
-        text-decoration: none;
-    }
+    display: flex;
+    justify-content: flex-start;
 ```
    
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+![Menu with items aligned to the left](images/flexMenuStart.png)
 
---- /collapse ---
+You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`. 
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Protected Birds page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
+
+![Menu with items evenly spaced](images/flexMenuSpace.png)
+
+![Menu with items aligned to the right](images/flexMenuEnd.png)
+
+**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/se-flex](http://dojo.soy/se-flex).
