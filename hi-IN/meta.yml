@@ -1,7 +1,7 @@
 ---
-title: Bird watch website 3.0
+title: बर्ड वॉच वेबसाइट 3.0 (Bird Watch Website 3.0)
 hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
+description: अपनी वेबसाइट पर अच्छा लेआउट (layout) और आकर्षित प्रभाव जोड़ें!
 theme: navy
 listed: true
 copyedit: true
@@ -15,20 +15,20 @@ version: 3.1.0
 last_tested: "2018-04-17"
 steps:
   - 
-    title: Introduction
+    title: परिचय
   - 
-    title: Getting setup
+    title: शुरू करने के लिए
   - 
-    title: Clickable cards
+    title: क्लिक करने योग्य कार्ड
   - 
-    title: All in a row
+    title: सभी एक पंक्ति में
   - 
-    title: Make your menu responsive
+    title: अपने मेन्यू को उत्तरदायी बनाएं
   - 
-    title: Captions and side notes
+    title: अनुशीर्षक (Caption) और साइड नोट्स (Side Notes)
   - 
-    title: Design cool page layouts
+    title: आकर्षक पेज लेआउट (Page Layout) बनाए
   - 
-    title: Photo collage
+    title: चित्र कोल्लाज (Photo collage)
   - 
-    title: Special effects
+    title: विशेष प्रभाव
