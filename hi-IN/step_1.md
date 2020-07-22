@@ -1,10 +1,10 @@
-## Introduction
+## परिचय
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+ये सुशी कार्ड (Sushi cards) आपको दिखाएंगे कि आकर्षक प्रभाव और लेआउट (layout) का उपयोग करके एक वेबसाइट को कैसे पॉलिश और पेशेवर बनाया जाए।
 
-### What you will make
+### आप क्या बनाएँगे
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+अपनी वेबसाइट (website) पर उपयोग किए जाने वाले कुछ प्रभावों को आज़माने के लिए नीचे दिए गए विंडो (Window) में अपने माउस कर्सर को हिलाएं:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/8d85e4f41d?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,28 +14,28 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 --- collapse ---
 ---
-title: What you will learn
+title: आप क्या सीखेंगे
 ---
 
-In these Sushi Cards, you will find out how to:
-* Create any website layout you want
-* Make your layout adjust itself automatically to different screen sizes
-* Make a collage of overlapping pictures and text
-* Apply some neat hover and click effects that you might have seen on other websites
+इन सुशी कार्ड (Sushi card) में, आपको पता चल जाएगा कि कैसे:
+* अपनी इच्छानुसार कोई भी वेबसाइट लेआउट (Website layout) बनाएं
+* अपने लेआउट को अलग-अलग स्क्रीन आकारों में स्वचालित रूप से एडजस्ट (adjust) करें
+* चित्रों व टेक्स्ट का एक अतिव्यापी कोल्लाज (overlapping collage) बनाएं
+* कुछ होवर व क्लिक वाले प्रभावों (Hover and click effects) को लागु करेंजो आपने अन्य वेबसाइटों पर देखे होंगे
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: आपको किन चीज़ों की जरुरत होगी
 ---
 
-### Hardware
+### हार्डवेयर
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ एक कंप्यूटर जो [trinket.io](https://trinket.io){:target="_blank"} वेबसाइट तक पहुँचने में सक्षम हो
 
-### Software
+### सॉफ्टवेयर
 
-This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+यह प्रोजेक्ट वेब ब्राउज़र में [trinket.io](https://trinket.io){:target="_blank"} का उपयोग करके पूरा किया जा सकता है या किसी ऑफ़लाइन text editor का उपयोग करके।
 
 --- /collapse ---
