@@ -1,10 +1,10 @@
-## Photo collage
+## चित्र कोल्लाज (Photo collage)
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+इस कार्ड पर आप CSS का उपयोग करके HTML तत्वों (HTML elements) के स्थान को ठीक करने और चित्र कोल्लाज (Photo collage) बनाना सीखेंगे।
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ अपने पेज पर एक `div` का इस्तेमाल करें और जितना चाहे उतनी छवियां लगाएं। `div` व `img` तत्वों (elements) को `id` मान (id values) दें।
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+तस्वीरें वेब पेज पर एक के बाद एक दिखाई देंगी, उसी क्रम में जैसे वे आपके कोड में दे रही हैं।
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`:
++ निम्नलिखित CSS class `div` तत्व (element) के अंदर जोड़े:
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ अब आपको कंटेनर (container) में `position: relative;` प्रॉपर्टी (property) जोड़के उसके आकार (size) को परिभाषित करना है। यह ये करता है अन्य तत्वों के स्थान को कंटेनर के (उसके भीतर के अनुसार) **के सापेक्ष(relative to)** परिभाषित हो ।
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ फिर **id selectors** का उपयोग करके प्रत्येक तत्वों (elements) के लिए शैली नियमों का एक सेट (set of style rules) बनाएं, उनके आकार निर्धारित करने के लिए (`width` और / या `height` प्रॉपर्टीज (properties)) और साथ ही उनके स्थान सटीक रूप से चुनने के लिए।
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+किसी तत्व (element) की स्थिति (position) को परिभाषित करने के लिए, चार प्रॉपर्टीज (properties) हैं जिनका आप उपयोग कर सकते हैं: `left`, `right`, `top`, और `bottom`। वे यह दर्शाते हैं कि प्रत्येक किनारा मुख्य किनारे से कितना दूर होना चाहिए। `top` या `bottom ` का उपयोग ऊपर या नीचे के स्थान को परिभाषित करने के लिए होता है व `left` या `right` का उपयोग दायीं व बायीं ओर के स्थान को परिभाषित करने के लिए किया जाता है।
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ अपनी प्रत्येक तस्वीर के लिए सटीक स्थान चुनें, और अपने CSS नियमों (CSS rules) में किसी भी प्रॉपर्टी (property) का उपयोग करें: `left`, `right`, `top` या `bottom`, उन स्थानों को परिभाषित करने के लिए। उदाहरण के लिए, यह कोड बिल्ली के चित्र को शीर्ष (top) से 100 पिक्सेल (pixel) और बाईं ओर से 60 पिक्सेल (pixel) की दूरी पर रखता है:
 
 ```css
     #imgYoungKestrel {
@@ -52,47 +52,47 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+टिप्पणी: स्थान का मान (Position values) नकारात्मक भी हो सकता हैं! यदि आप एक नकारात्मक मूल्य का उपयोग करते हैं, तो यह कंटेनर (container) के बाहर कर देगा तत्व (element) को, उस ओर जिस ओर आपने निर्देशित किया हुआ है।
 
-### Making things overlap
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+### चीजों को अतिव्याप (overlap) करना
+आप कुछ चित्रों को अतिव्याप (overlap) कराना चाहते होंगे। लेकिन आप कैसे चुनेंगे की सबसे ऊपर कोनसा जाए?
 
-+ Choose two images and give them positions that cause them to overlap.
++ दो छवियों को चुनें और उन्हें ऐसे स्थान दें जो उनके अतिव्याप (overlap) होने का कारण बन जाए।
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 6;` to the other.
++ एक अतिरिक्त प्रॉपर्टी (property) जोड़ें, `z-index: 10;` उनमें से एक के लिए, और फिर `z-index: 6;` जोड़ें दूसरे में।
 
-+ Take a look at the result on your webpage.
++ अपने वेबपेज (webpage) पर परिणाम पर एक नज़र डालें।
 
 ![](images/whiteInFront.png)
 
-+ Now swap the `z-index` values, so that the `6` and the `10` are the other way around. Do you see any difference on your web page?
++ अब `z-index` के मान (value) को आपस में बदल दें ताकि `6` और `10` का स्थान बदल जाए। क्या आपको अपने वेब पेज (webpage) पर कोई अंतर दिखाई दे रहा है?
 
 ![](images/whiteBehind.png)
 
 --- collapse ---
 ---
-title: How does z-index work?
+title: z-index कैसे काम करता है?
 ---
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+`z-index` प्रॉपर्टी (property) आपको यह तय करने देता है कि दो या अधिक तत्वों को कैसे अतिव्याप (overlap) करना चाहिए। मान (value) किसी भी पूर्ण संख्या (whole number) में हो सकता है।
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+**उच्चतम (highest)** मान का तत्व **शीर्ष (top)** पर होगा, या दूसरे शब्दों में सबके **सामने (front)**। अगली उच्चतम संख्या वाला तत्व (element) उसके पीछे है, और दूसरों के सामने, और इसी तरह, जब तक आप सबसे कम संख्या वाले तत्व (element) के पास पहुंचेंगे, वह सबसे पीछे होगा।
 
 --- /collapse ---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+आप किसी भी HTML तत्व (HTML elements) को इस तरह से स्थान दे सकते हैं, न कि सिर्फ छवि को। उदाहरण के लिए, आप `p` तत्व (element) का उपयोग कर सकते हैं, एक तस्वीर पर के ऊपर कुछ टेक्स्ट (text) जोड़ने के लिए।
 
 --- challenge ---
 
-## Challenge: make a photo collage
+## चुनौती: चित्र कोल्लाज (Photo collage) बनाएं
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ नीचे दिखाए गए जैसे, अपना चित्र कोल्लाज (Photo collage) बनाने का प्रयास करें! अलग-अलग `z-index` मान (z index values) का उपयोग करके वैसा अतिव्यापी प्रभाव (overlapping effect) बनाएं जैसा आप चाहते हैं।
 
 --- hints ---
 
 --- hint ---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+नीचे मेरी आयरलैंड वेबसाइट (Ireland website) के चित्र कोल्लाज (Photo collage) के लिए HTML कोड है। छह तस्वीरें और एक टेक्स्ट का हिस्सा सभी एक ही `div` के अंदर हैं।
 
 ```html
     <div id="photoBox" class="relPos">
@@ -109,7 +109,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 --- hint ---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+यहां CSS नियम (CSS rules) हैं जो कोल्लाज (collage) में मेरे प्रत्येक चित्र के लिए स्थान निर्धारित करते हैं:
 
 ```css
     #imgYoungKestrel {
@@ -156,7 +156,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 --- hint ---
 
-Here are the CSS classes I've used:
+यहां CSS classes हैं जिनका मैंने उपयोग किया है:
 
 ```css
     .collagePhoto {
