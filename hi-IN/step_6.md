@@ -28,7 +28,7 @@
 
 `figcaption` तत्व (element) आपका **अनुशीर्षक (caption)** है । यह `img` तत्व (element) के ऊपर या नीचे भी लिखा जा सकता है।
 
-![Picture of a barn owl with a caption](images/figureAndCaption.png)
+![अनुशीर्षक के साथ खलिहानी उल्लू (Barn Owl) की तस्वीर](images/figureAndCaption.png)
 
 --- collapse ---
 ---
@@ -113,7 +113,7 @@ title: यह उपयोगी क्यों है?
 
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![अपने स्टाइल (own styling) के साथ अतिरिक्त नोट्स](images/asidesStyled.png)
 
 अगले कार्ड पर, आप अपनी वेबसाइट के लेआउट (layout) को और अधिक रोचक बनाने का तरीका जानने जा रहे हैं!
 
