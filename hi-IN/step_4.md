@@ -11,7 +11,7 @@
 
 आपको कार्ड पेज के बीच में जाते हुए दिखेंगे। बाएँ और दाएँ किनारे (margins) को `auto` सेट करके, किसी भी तत्व (element) को बाईं ओर के बजाय बीच में रख सकते हैं।
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![कार्ड बाईं ओर के बजाय बीच में दिखाई देंगे](images/marginAuto.png)
 
 + पेज (Page) को संकीर्ण(narrower) और व्यापक(wider) बनाने के लिए ब्राउज़ विंडो (browser window) के किनारे को खींचें - ध्यान दें कि कार्ड केंद्रित रहेगा।
 
@@ -36,11 +36,11 @@
 
 + वेबसाइट को व्यापक (wider) और संकीर्ण (narrower) बनाने के लिए अपनी विंडो के किनारे को खींचें, और देखें कि विंडो के आकार को फिट करने के लिए कार्ड कैसे घूमते हैं, कभी-कभी अगली पंक्ति में जाते हुए।
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![कार्ड, दो पंक्तियों में ब्राउज़र की चौड़ाई के बराबर व्यवस्थित होते हैं](images/flexSideBySide.png)
 
 + `width` और `height` properties हटाने का प्रयास करें `.card` class से, देखें कि क्या होता है: `flex` चतुराई से एक पहेली की तरह एक साथ कार्ड फिट बैठता है, एक ही पंक्ति में कि समान ऊंचाई भी बरकरार रखते हुए।
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![कार्डों की स्वचालित चौड़ाई के साथ कंधे से कंधा मिलाकर व्यवस्था](images/flexAutoWidths.png)
 
 यदि आपके पास अपने पेज (page) के शीर्ष पर एक नेविगेशन मेन्यू (navigation menu) है, तो भी आप इस चाल (trick) का उपयोग कर सकते हैं। आपका मेन्यू सूची तत्वों (list elements) (`li`) से बना होना चाहिए अगले हिस्से के लिए । यदि आप चाहें, तो आप इसे मेरी वेबसाइट के साथ आज़मा सकते हैं।
 
@@ -53,14 +53,14 @@
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![बाईं ओर संरेखित आइटम वाला मेन्यू](images/flexMenuStart.png)
 
 आपका मेन्यू (menu) फिर वैसा ही हो गया ना? `flex` फ्लेक्स के बारे में अच्छी बात यह है की आप लेआउट को property `justify-content` के साथ नियंत्रित कर सकते हैं।
 
 + `justify-content` का मान (value) को बदलें `flex-end` से और देखें क्या होता है। या इसे `space-around` से बदलें, मेन्यू आइटम को समान रूप से बनाने के लिए, जैसे आपने कार्ड्स के लिए किया था।
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![एक सामान दूर आइटम वाला मेन्यू](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![दाईं ओर संरेखित आइटम वाला मेन्यू](images/flexMenuEnd.png)
 
 **`flex`** एक बहुत शक्तिशाली लेआउट उपकरण है जो अपने स्वयं के पूरे सुशी कार्ड श्रृंखला (Sushi Card series) को भर सकता है --- आप इसके बारे में अधिक जान सकते हैं यहाँ [dojo.soy/se-flex](http://dojo.soy/se-flex)।
