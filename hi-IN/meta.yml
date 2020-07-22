@@ -1,0 +1,25 @@
+---
+title: बर्ड वॉच वेबसाइट 3.0 (Bird Watch Website 3.0)
+hero_image: images/banner.png
+description: अपनी वेबसाइट पर अच्छा लेआउट (layout) और आकर्षित प्रभाव जोड़ें!
+theme: navy
+listed: true
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+hardware: ''
+software: html-css-javascript
+version: 3.1.0
+last_tested: "2018-04-17"
+steps:
+  - title: परिचय
+  - title: शुरू करने के लिए
+  - title: क्लिक करने योग्य कार्ड
+  - title: सभी एक पंक्ति में
+  - title: अपने मेन्यू को उत्तरदायी बनाएं
+  - title: अनुशीर्षक (Caption) और साइड नोट्स (Side Notes)
+  - title: आकर्षक पेज लेआउट (Page Layout) बनाए
+  - title: चित्र कोल्लाज (Photo collage)
+  - title: विशेष प्रभाव
