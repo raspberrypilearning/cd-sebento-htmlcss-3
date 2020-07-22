@@ -2,7 +2,7 @@
 
 यहां एक तकनीक है जिसका उपयोग करके आप फोटो गैलरी या अपने प्रोजेक्ट्स (projects) दिखाने वाले एक पोर्टफोलियो पेज (portfolio page) बनाने के लिए कर सकते हैं: little **preview cards**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![छवि thumbnail और कुछ text दिखाते हुए प्रीव्यू कार्ड (Preview card)](images/cardsPreview.png)
 
 + अपनी पसंद के अनुसार, अपनी वेबसाइट में निम्न HTML कोड जोड़ें। मैं `index.html` पर अपना काम कर रहा हूँ | आप अपने प्रीव्यू कार्ड (preview card) के अनुरूप चित्र व शब्दों (picture & text) को बदल सकते हैं। मैं आयरलैंड (Ireland) में पर्यटकों को भाने वाले कुछ जगहों को चिन्हित करने वाला हूँ।
 
@@ -14,7 +14,7 @@
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![छवि व टेक्स्ट (text), styles ke इस्तेमाल से पहले](images/cardUnstyled.png)
 
 + `card` और `tinyPicture` क्लासेज(Classes) बनाने के लिए निम्न CSS कोड जोड़ें:
 
@@ -38,7 +38,7 @@
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![एक छोटे कार्ड प्रभाव बनाने के लिए स्टाइल के साथ Image और text.](images/cardStyled.png)
 
 चलिए पूरे प्रीव्यू कार्ड (preview card) को लिंक में बदलते हैं ताकि लोग अधिक जानकारी देखने के लिए क्लिक कर सकें।
 
@@ -54,7 +54,7 @@
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![टेक्स्ट (text) और चित्र जिसे लिंक में बदल दिया गया है](images/cardLink.png)
 
 --- collapse ---
 ---
