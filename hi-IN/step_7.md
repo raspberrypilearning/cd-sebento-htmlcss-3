@@ -1,12 +1,12 @@
-## Design cool page layouts
+## आकर्षक पेज लेआउट (Page Layout) बनाए
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Protected Birds page.
++ इस कार्ड के लिए आपको एक ऐसे पेज (page) के साथ काम करना चाहिए जिसमें `main` तत्व (element) के अंदर यह तीन तत्व हों: एक `article` और दो `aside`। आगे बढ़ो और अगर आप को जरूरत है तो ये पहले बनाएं। यदि आप मेरी वेबसाइट पर काम करना चाहते हैं, तो `aside` कोड पिछले सुशी कार्ड (Susdhi card) से संरक्षित पक्षी पेज (Protected Birds page) पर जोड़ दें।
 
-Here are three different page layouts you'll be applying:
+यहां तीन अलग-अलग पेज लेआउट (Page layouts) हैं जिन्हें आप लागू कर रहे हैं:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ `main` और उसके तीनो तत्वों में यह CSS classes जोड़ें.
 
 ```html
     <main class="myPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+आप जिस कंटेनर के लेआउट (layout) को बदलेंगे वह `main` है, लेकिन आप इसे किसी भी प्रकार के कंटेनर के साथ कर सकते हैं, जैसे `div` या `article`, या यहां तक कि पूरे page `body` के साथ भी। जिस तकनीक का आप उपयोग करने जा रहे हैं उसे **CSS grid** कहा जाता है।
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+इस उदाहरण में, `header` और `footer` डिजाइन से बाहर छोड़ दिया जाएगा, लेकिन उन्हें ग्रिड में भी शामिल किया जा सकता है।
 
-+ Set the `display` property to `grid` on the overall container:
++ इस कंटेनर में `display` प्रॉपर्टी (display property) को `grid` पर सेट करें:
 
 ```css
     .myPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+आपको क्या लगता है `grid-column-gap` और `grid-row-gap` properties क्या करते हैं?
 
-+ Next, you name a `grid-area` for each element:
++ अब आप एक `grid-area` बनाएँगे हर तत्व (element) के लिए:
 
 ```css
     .myGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+अब आप अपना लेआउट (layout) डिजाइन करेंगे! दोनों `aside` तत्वों (elements) को एक दूसरे के अगल बगल रख दें पेज (page) के निचले भाग में। इसके लिए आपको दो समान चौड़ाई के **columns** (कलुमंस) की जरूरत पड़ेगी। आप **row** की ऊंचाई (height) को स्वचालित रख सकते हैं।
 
-+ Put the following code inside the `.myPageLayoutGrid` CSS rules:
++ निम्नलिखित कोड को `.myPageLayoutGrid` के CSS नियमों (CSS rules) में डालें:
 
 ```css
     grid-template-rows: auto;
@@ -64,25 +64,25 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "egAside1 egAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` का मतलब **fraction** (भाग) ही है। ध्यान रखें कि आप `article` ऐसे बनाएं की वह दोनों कलुमंस (columns) की सभी जगह का इस्तेमाल करे।
 
 
 --- collapse ---
 ---
-title: Help! I got errors and warnings!
+title: मदद! मुझे चूक व चेतावनी मिली!
 ---
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+यदि आप Trinket का उपयोग कर रहे हैं, तो आप कुछ चूक और चेतावनियों दिख सकती हैं, भले ही आपने कोड वैसे ही लिखें जैसे ऊपर लिखा है। ऐसा इसलिए है क्योंकि ट्रिंकेट(trinket) अभी तक CSS grid की प्रॉपर्टीज (properties) को नहीं पहचानता है। हालांकि, कोड अभी भी काम करेगा।
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+यदि CSS grid कोड आपको 'unknown property' (अज्ञात गुण) की चेतावनी देता है या 'unexpected token 1fr' (अप्रत्याशित टोकन 1fr) जैसी कोई चूक देता है, तो आप इन पर ध्यान न दें।
 
 --- /collapse ---
 
 ![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+अब `aside` तत्व (element) को दायीं तरफ रख दें व उन्हें `article` की आधी चौड़ाई में बनाएं।
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ `grid-template-columns` व `grid-template-areas` का मान (value) निम्नलिखित कोड से बदलें:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -93,7 +93,7 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 ![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot:
++ यदि आप नहीं चाहते हैं कि `aside` तत्व (element) नीचे तक फैले, तो आप एक डॉट (dot) का उपयोग करके एक खाली स्थान जोड़ सकते हैं:
 
 ```css
     grid-template-areas: 
@@ -106,15 +106,15 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 --- challenge ---
 
-## Challenge: make different layouts for different screen sizes
+## चुनौती: विभिन्न आकार के स्क्रीनों के लिए अलग-अलग लेआउट (layout) बनाएं
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ क्या आप स्क्रीन आकार जांच का उपयोग कर सकते हैं जो आपने पहले जोड़ा था, ताकि वह, स्क्रीन कितनी चौड़ी है, उस आधार पर लेआउट (layout) में बदलाव कर सके? नोट: यदि आपने प्रत्येक स्क्रीन साइज के लिए पहले से ही CSS खंड (CSS blocks) बनाए लिए हैं, तो आप नए खंड बनाने के बजाय उन खंड में नया CSS कोड जोड़ सकते हैं।
 
 --- hints ---
 
 --- hint ---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+निम्न कोड ऊपर वाले CSS class के लिए एक लेआउट (layout) को परिभाषित करता है, जब स्क्रीन 1000 पिक्सेल (pixel) से बड़ा हो:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -131,7 +131,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 --- hint ---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+निम्न कोड ऊपर वाले CSS class के लिए एक लेआउट (layout) को परिभाषित करता है, जब स्क्रीन 1600 पिक्सेल (pixel) से बड़ा हो:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -151,4 +151,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 --- /challenge ---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/se-css-grid](http://dojo.soy/se-css-grid){:target="_blank"}
+**CSS grid**, आप अपनी पसंद का लगभग कोई भी लेआउट (layout) बना सकते हैं। यदि आप और अधिक सीखना चाहते हैं, तो [dojo.soy/se-css-grid](http://dojo.soy/se-css-grid){:target= "_ blank"} पर जाएँ।
