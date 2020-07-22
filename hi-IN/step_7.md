@@ -78,7 +78,7 @@ title: मदद! मुझे चूक व चेतावनी मिली!
 
 --- /collapse ---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![Asides एक दूसरे के अगल बगल है नीचे की ओर](images/cssGridAsidesAtBottom.png)
 
 अब `aside` तत्व (element) को दायीं तरफ रख दें व उन्हें `article` की आधी चौड़ाई में बनाएं।
 
@@ -91,7 +91,7 @@ title: मदद! मुझे चूक व चेतावनी मिली!
         "egArticle egAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![Asides दायीं तरफ है नीचे की ओर](images/cssGridAsidesOnRight.png)
 
 + यदि आप नहीं चाहते हैं कि `aside` तत्व (element) नीचे तक फैले, तो आप एक डॉट (dot) का उपयोग करके एक खाली स्थान जोड़ सकते हैं:
 
@@ -102,7 +102,7 @@ title: मदद! मुझे चूक व चेतावनी मिली!
         "egArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![Asides लेकिन नीचे तक नहीं फैले हैं](images/cssGridAsidesTopRight.png)
 
 --- challenge ---
 
