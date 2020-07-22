@@ -1,10 +1,10 @@
-## Captions and side notes
+## अनुशीर्षक (Caption) और साइड नोट्स (Side Notes)
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+इस कार्ड पर आप दो और प्रकार के **container** element के बारे में जानेंगे: एक जिससे आप किसी तस्वीर में अनुशीर्षक (caption) (कुछ टेक्स्ट या शीर्षक या संक्षिप्त विवरण) जोड़ने के लिए उपयोग कर सकते हैं, और दूसरा, जब आपके पास कोई अतिरिक्त सामान होता है जो एक पेज (page) पर मुख्य जानकारी के साथ नहीं होना चाहिए।
 
-### Pictures with captions
+### अनुशीर्षक के साथ चित्र
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.
++ एक `img` तत्व (element) ढूंढें, जहां आपके पास ऊपर या नीचे टेक्स्ट (text) है जो चित्र (picture) के साथ होना चाहिए। मैं `index.html` में Tito picture पर काम कर रहा हूँ, लेकिन आप अपनी वेबसाइट पर जो कुछ भी है उसके साथ कर सकते हैं।
 
 ```html
   <img id="owly" src="barn-owl.jpg" class="topDivider someSpacing mediumPictures" alt="A barn owl" />the dog" />        
@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ कोड के ऊपर की रेखा पर, शुरू करने वाला टैग (opening tag) `<figure>` जोड़ें। कोड के नीचे एक नई लाइन पर, ख़तम करने वाला टैग (closing tag) `</figure>` जोड़ें।
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ अगला, `p` टैग, या आपके (text) के आसपास जो भी टैग हैं (शायद यह एक शीर्षक हो, जैसे `h2`) को हटाएँ, और टेक्स्ट (text) को `<figcaption> </figcaption>` के बीच में रखें। आपका कोड कुछ इस तरह दिखना चाहिए:
 
 ```html
   <figure>
@@ -26,22 +26,22 @@ On this card you'll learn about two more types of **container** element: one tha
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+`figcaption` तत्व (element) आपका **अनुशीर्षक (caption)** है । यह `img` तत्व (element) के ऊपर या नीचे भी लिखा जा सकता है।
 
 ![Picture of a barn owl with a caption](images/figureAndCaption.png)
 
 --- collapse ---
 ---
-title: Why is this useful?
+title: यह उपयोगी क्यों है?
 ---
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+`figure` तत्व (element) आपकी तस्वीर और उसके अनुशीर्षक (caption) के लिए एक प्रकार के **container** के रूप में कार्य करता है। यह आपको शैलियों (styles) को परिभाषित करते समय उन्हें एक इकाई (one unit) के रूप में मानने की अनुमति देता है।
 
-Grouping them together logically also helps to maintain good structure in your website code.
+उन्हें तार्किक रूप से एक साथ समूहित करने से आपके वेबसाइट कोड में अच्छी संरचना को बनाए रखने में मदद मिलती है।
 
 --- /collapse ---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+आप CSS कोड का उपयोग कर `figure` और `figcaption` को शैली (style) करने के लिए कर सकते हैं जैसा कि आप किसी अन्य तत्व के लिए करेंगे, classes, IDs, या element selectors का उपयोग करते हुए। नए कंटेनर द्वारा जोड़े गए अतिरिक्त जगह (extra spacing) को हटाने के लिए मैं निम्नलिखित नियम जोड़ रहा हूं:
 
 ```css
   figure { 
@@ -52,13 +52,13 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
   }
 ```
 
-### Side notes
+### साइड नोट्स (Side Notes)
 
-The Protected Birds page on my website is a list of bird species that are in decline in Ireland. I want to add some notes about common reasons for declining bird numbers, as well as some useful links. That information doesn't really belong in the `article` element with all the birds. This is an example of when you might use the `aside` element.
+मेरी वेबसाइट पर संरक्षित पक्षी पृष्ठ (Protected Birds page) है जिसमे आयरलैंड (Ireland) की उन पक्षी प्रजातिओ के नाम हैं जिनकी संख्या गिर रही है। मैं पक्षी संख्या में गिरावट के सामान्य कारणों के साथ-साथ कुछ उपयोगी लिंक के बारे में कुछ नोट्स जोड़ना चाहता हूं। वह जानकारी सभी पक्षियों की जानकारी के साथ `article` element में नहीं होना चाहिए। यह एक उदाहरण है जब आप `aside` तत्व (element) का उपयोग कर सकते है|
 
-+ Go to a page of your website that has an `article` element on it — I'm using `birds.html`.
++ अपनी वेबसाइट के उस पेज (page) पर जाएं, जिसमें `article` element है | मैं `birds.html` का उपयोग कर रहा हूं।
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
++ `article` तत्व (element) के **बाहर (outside)**, एक या अधिक जोड़े लगाएं, `<aside> </aside>` टैग के, अपने अतिरिक्त टेक्स्ट के लिए।
 
 ```html  
   <aside class="sideNoteStyle">
@@ -83,18 +83,18 @@ The Protected Birds page on my website is a list of bird species that are in dec
 
 --- collapse ---
 ---
-title: Why is this useful?
+title: यह उपयोगी क्यों है?
 ---
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+`aside`, `article`, और अन्य कंटेनर (containet) सभी समान हैं। वास्तविक अंतर **meaning** केवल यह है कि आप उनक क्या उपयोग करते हैं।
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+जब भी आप कर सकते हैं सार्थक HTML तत्वों (html elements) का उपयोग करना महत्वपूर्ण है। यह आपकी वेबसाइट को बेहतर संरचना देता है और विशेष रूप से **screen readers** का उपयोग करने वाले लोगों के लिए उपयोगी है |
 
 --- /collapse ---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+क्या आपने अन्य तत्व (element) को देखा, `span`? यह एक विशेष टैग है जिसे आप अतिरिक्त CSS कोड जोड़ने के लिए उपयोग कर सकते हैं! आप `span` टैग की एक जोड़ी के बीच में कुछ भी रख सकते हैं। यह किसी अनुच्छेद के **part** को शैलीकृत करने (styling) जैसे कामो में उपयोगी होता है।
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ ऊपर दिए गए HTML कोड की स्टाइल को पूरा करने के लिए अपनी स्टाइल शीट(style sheet) में निम्नलिखित CSS कोड जोड़ें।
 
 ```css
   .sideNoteStyle {
@@ -115,8 +115,8 @@ Did you spot the other element in there, `span`? This is a special tag you can u
 
 ![Additional notes with their own styling](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+अगले कार्ड पर, आप अपनी वेबसाइट के लेआउट (layout) को और अधिक रोचक बनाने का तरीका जानने जा रहे हैं!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Protected Birds page on my website.
++ तैयार होने के लिए, एक पेज (page) बनाएं जिसमें एक `article` और दो `aside` तत्व (elements) `<main> </main>` टैग्स (tags) के अंदर हों। या यदि आप चाहें, तो आप मेरी वेबसाइट पर Protected Birds पेज (page) के साथ काम कर सकते हैं।
 
    
