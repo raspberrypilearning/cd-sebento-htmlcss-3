@@ -40,7 +40,7 @@
 
 किसी तत्व (element) की स्थिति (position) को परिभाषित करने के लिए, चार प्रॉपर्टीज (properties) हैं जिनका आप उपयोग कर सकते हैं: `left`, `right`, `top`, और `bottom`। वे यह दर्शाते हैं कि प्रत्येक किनारा मुख्य किनारे से कितना दूर होना चाहिए। `top` या `bottom ` का उपयोग ऊपर या नीचे के स्थान को परिभाषित करने के लिए होता है व `left` या `right` का उपयोग दायीं व बायीं ओर के स्थान को परिभाषित करने के लिए किया जाता है।
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![शीर्ष, बाएं, नीचे, और दाएं प्रॉपर्टीज (top, left, bottom, and right properties) कैसे पैरेंट कंटेनर (parent container) से सम्बंधित हैं, यह दिखने वाला चित्र](images/cssPositionProperties.png)
 
 + अपनी प्रत्येक तस्वीर के लिए सटीक स्थान चुनें, और अपने CSS नियमों (CSS rules) में किसी भी प्रॉपर्टी (property) का उपयोग करें: `left`, `right`, `top` या `bottom`, उन स्थानों को परिभाषित करने के लिए। उदाहरण के लिए, यह कोड बिल्ली के चित्र को शीर्ष (top) से 100 पिक्सेल (pixel) और बाईं ओर से 60 पिक्सेल (pixel) की दूरी पर रखता है:
 
@@ -174,7 +174,7 @@ title: z-index कैसे काम करता है?
 
 --- /hints ---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![चित्र कोल्लाज (Photo collage) व उसके ऊपर टेक्स्ट (text)](images/photoCollageExample.png)
 
 --- /challenge ---
 
