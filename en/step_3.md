@@ -65,7 +65,7 @@ Notice how the value of `href` in my link ends in `#scBarnowl`? This is a neat t
 
 + First, type the URL of the page to link to, followed by `#`. 
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scBarnowl"`. The value of the `id` is what you type after the `#` in your link.
++ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scBarnowl">`. The value of the `id` is what you type after the `#` in your link.
 
 --- /collapse ---
 
