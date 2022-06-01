@@ -1,3 +1,4 @@
+---
 title: Bird watch website 3.0
 hero_image: images/banner.png
 description: Add nice layouts and cool effects to your website!
@@ -11,14 +12,18 @@ site_areas: coderdojo, projects
 hardware: ''
 software: html-css-javascript
 version: 3.1.0
-last_tested: "2018-04-17"
+last_tested: '2018-04-17'
 steps:
-  - title: Introduction
-  - title: Getting setup
-  - title: Clickable cards
-  - title: All in a row
-  - title: Make your menu responsive
-  - title: Captions and side notes
-  - title: Design cool page layouts
-  - title: Photo collage
-  - title: Special effects
+- title: Introduction
+- title: Getting setup
+- title: Clickable cards
+- title: All in a row
+  completion:
+  - engaged
+- title: Make your menu responsive
+- title: Captions and side notes
+- title: Design cool page layouts
+- title: Photo collage
+- title: Special effects
+  completion:
+  - internal
