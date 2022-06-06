@@ -15,13 +15,15 @@ version: 3.1.0
 last_tested: '2018-04-17'
 steps:
 - title: परिचय
-  completion: engaged
 - title: शुरू करने के लिए
 - title: क्लिक करने योग्य कार्ड
 - title: सभी एक पंक्ति में
+  completion:
+  - engaged
 - title: अपने मेन्यू को उत्तरदायी बनाएं
 - title: अनुशीर्षक (Caption) और साइड नोट्स (Side Notes)
 - title: आकर्षक पेज लेआउट (Page Layout) बनाए
 - title: चित्र कोल्लाज (Photo collage)
-  completion: internal
 - title: विशेष प्रभाव
+  completion:
+  - internal
