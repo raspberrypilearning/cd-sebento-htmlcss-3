@@ -24,6 +24,8 @@ steps:
 - title: Captions and side notes
 - title: Design cool page layouts
 - title: Photo collage
-- title: Special effects
   completion:
   - internal
+- title: Special effects
+  completion:
+  - external
