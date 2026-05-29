@@ -87,7 +87,6 @@ The rest of the properties you defined previously for `nav ul` will stay the sam
 ![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
 
 --- hints ---
-
 --- hint ---
 
 The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
@@ -102,8 +101,8 @@ The following code defines flex properties for menu items when the screen is big
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 
 --- /challenge ---

@@ -111,24 +111,6 @@ Let's put the `aside` elements over on the right and make them half the width of
 + Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
 
 --- hints ---
-
---- hint ---
-
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
-
-```css
-    @media all and (min-width: 1000px) {
-        .myPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "egArticle egArticle"
-                "egAside1 egAside2";
-        }
-    }  
-```
-
---- /hint ---
-
 --- hint ---
 
 The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
@@ -146,8 +128,8 @@ The following code defines a layout for the CSS class above when the screen is b
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /challenge ---
 
