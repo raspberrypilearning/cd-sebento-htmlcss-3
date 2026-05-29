@@ -89,71 +89,6 @@ You can position any HTML elements in this way, not just images. For example, yo
 + Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
 
 --- hints ---
-
---- hint ---
-
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
-
-```html
-    <div id="photoBox" class="relPos">
-        <img id="imgYoungKestrel" class="collagePhoto absPos" src="young-kestrel.jpg" alt="A young kestrel" />
-        <img id="imgYoungKestrelTree" class="collagePhoto absPos" src="baby-kestrel.jpg" alt="A young kestrel on a branch" />
-        <img id="imgKestrelSky" class="collagePhoto absPos" src="kestrel-flying.jpg" alt="A kestrel flying" />
-        <img id="imgHello" class="collagePhoto absPos" src="bird-kestrel.jpg" alt="Closeup of a kestrel's face" />
-        <img id="imgKestrel" class="collagePhoto absPos" src="kestrel-mirror.jpg" alt="A kestrel perched by a mirror" />
-        <p id="photoText" class="absPos"><em>The Kestrel</em></p>
-    </div>
-```
-   
---- /hint ---
-
---- hint ---
-
-Here are the CSS rules that set the positions for each of my pictures in the collage:
-
-```css
-    #imgYoungKestrel {
-        width: 230px;
-        top: 100px;
-        left: 20px;
-        z-index: 6;
-    }
-    #imgYoungKestrelTree {
-        width: 250px;
-        top: 210px;
-        left: 160px;
-        z-index: 10;
-    }
-    #imgKestrelSky {
-        width: 250px;
-        top: 65px;
-        left: 180px;
-        z-index: 8;
-    }
-    #imgHello {
-        width: 150px;
-        top: 10px;
-        left: 340px;
-        z-index: 9;
-    }
-    #imgKestrel {
-        width: 200px;
-        top: 120px;
-        left: 360px;
-        z-index: 7;
-    }
-    #photoText {
-        font-family: "Times New Roman", serif;
-        color: #cc6699;
-        font-size: 22px;
-        left: 185px;
-        top: 190px;
-        z-index: 20;
-    }
-```
-
---- /hint ---
-
 --- hint ---
 
 Here are the CSS classes I've used:
@@ -171,8 +106,8 @@ Here are the CSS classes I've used:
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 ![Photo collage with text over the top](images/photoCollageExample.png)
 
